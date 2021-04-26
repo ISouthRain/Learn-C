@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clang编译运行C文件",
+            "type": "shell",
+            "command": "clang ${file} -o ${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "none"
+        },
+        {
+            "label": "运行已编译C文件",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "none"
+        },
+        {
+            "label": "删除运行C语言的文件",
+            "type": "shell",
+            "command": "rm ${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "none"
+        },
+        {
+            "label": "clang编译运行C语言",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent",
+                "focus": true
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "clang编译运行C文件",
+                "运行已编译C文件",
+                "删除运行C语言的文件"
+            ],
+            "problemMatcher": []
+        },
+    ]
+}
