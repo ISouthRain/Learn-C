@@ -43,5 +43,15 @@
             ],
             "problemMatcher": []
         },
+        /***************** 运行 Python  ***************************/
+        {
+            "label": "运行Python",
+            "type": "shell",
+            "command": "python3 ${file}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "build"
+        },
     ]
 }
