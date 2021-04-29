@@ -24,3 +24,11 @@ print('我叫'+name+'今年'+str(age)+'岁') #正确示范 将 age 的 int 类�
 赋值运算符取对象问题 对象有三部分 标识(id)，类型，值
 见图 #赋值运算符取对象问题 
 P24 6：30
+
+Python一切皆为对象，所有对象都有一个 布尔值 见图 #对象布尔值 # 对象布尔值1
+
+print 嵌套 if...else 见图 # print嵌套if...else 
+
+range()函数 见图 #range()函数 见视频 P36
+
+for-in 循环 见图 # for-in循环 见视频 # P38

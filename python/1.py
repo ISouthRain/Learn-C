@@ -1,3 +1,6 @@
-a=10
-b=11
-print('a>b吗？',a>b)
+a=1
+b=5
+while a<=b:
+    print('Jack')
+    a+=b
+    print(a)
