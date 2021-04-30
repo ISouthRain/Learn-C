@@ -43,7 +43,6 @@
             ],
             "problemMatcher": []
         },
-        /***************** 运行 Python  ***************************/
         {
             "label": "运行Python",
             "type": "shell",
