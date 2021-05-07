@@ -32,3 +32,7 @@ print 嵌套 if...else 见图 # print嵌套if...else
 range()函数 见图 #range()函数 见视频 P36
 
 for-in 循环 见图 # for-in循环 见视频 # P38
+
+列表的删除操作 见图 #列表的删除操作 见视频 #P53
+
+
