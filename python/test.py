@@ -1,6 +1,21 @@
-number = 7
-guess = -1
-if guess != number:
-    print('11')
-elif guess >= number:
-    print('jack')
+import pickle
+
+# 使用pickle模块将数据对象保存到文件
+data1 = {'a': [1, 2.0, 3, 4+6j],
+         'b': ('string', u'Unicode string'),
+         'c': None}
+
+selfref_list = [1, 2, 3]
+print(selfref_list)
+selfref_list.append(selfref_list)
+print(selfref_list)
+
+output = open('data.pkl', 'wb')
+
+# Pickle dictionary using protocol 0.
+pickle.dump(data1, output)
+
+# Pickle the list using the highest protocol available.
+pickle.dump(selfref_list, output, -1)
+
+output.close()
