@@ -1,5 +1,7 @@
 #include<stdio.h>
 int main()
 {
-   printf("Loujank"); 
+   int p;
+   scanf("去哦方面：%d",&p);
+   printf("Loujank %d",p);
 }
