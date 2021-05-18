@@ -1,6 +1,7 @@
 {
     "version": "2.0.0",
     "tasks": [
+        //***************运行C语言**************//
         {
             "label": "clang编译运行C文件",
             "type": "shell",
@@ -43,10 +44,11 @@
             ],
             "problemMatcher": []
         },
+        //*********** 运行python *************//
         {
             "label": "运行Python",
             "type": "shell",
-            "command": "python3 ${file}",
+            "command": "python ${file}",
             "options": {
                 "cwd": "${fileDirname}"
             },
