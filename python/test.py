@@ -1,8 +1,9 @@
 a='='
 print('loujie')
-i=0
+i=0.0
 while True:
-    if i<=100:
-        print(a*i)
-        i=i+1
-        print(i)
+    if i<=10:
+        print()
+        i=i+0.1
+    elif i>=10:
+        break

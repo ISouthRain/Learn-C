@@ -23,7 +23,7 @@
         {
             "label": "删除运行C语言的文件",
             "type": "shell",
-            "command": "rm ${fileBasenameNoExtension}",
+            "command": "rm ${fileBasenameNoExtension}.exe",
             "options": {
                 "cwd": "${fileDirname}"
             },
