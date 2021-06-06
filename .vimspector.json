@@ -7,7 +7,7 @@
         "type": "python",
         "request": "launch",
         "cwd": "${workspaceRoot}",
-        "python": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python39\\python",
+        "python": "/data/data/com.termux/files/usr/bin/python",
         "stopOnEntry": true,
         "console": "externalTerminal",
         "debugOptions": [],

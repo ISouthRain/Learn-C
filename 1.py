@@ -1,6 +1,10 @@
-c=1
+ll=1
 d=1
-while c==d:
-    print(c+d)
-    c=c+1
-    d=c+1
+while ll==d:
+    print(ll+d)
+    ll=ll+1
+    d=ll+1
+while ll!=d:
+    print(ll+d)
+    ll=ll+1
+    d=d+1
