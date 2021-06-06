@@ -1,6 +1,26 @@
 {
   "configurations": {
-    "python: debugpy": {
+    "Launch": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "launch",
+        "program": "/data/data/com.termux/files/usr/bin/lldb",
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "lldb"
+      }
+    },
+    "Attach": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "attach",
+        "program": "/data/data/com.termux/files/usr/bin/lldb",
+        "MIMode": "lldb"
+      }
+    },
+	"python: debugpy": {
       "adapter": "debugpy",
       "configuration": {
         "name": "python: debugpy",
@@ -16,3 +36,5 @@
     }
   }
 }
+
+
