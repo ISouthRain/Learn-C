@@ -1,48 +1,43 @@
 {
   "configurations": {
-    "Launch": {
-      "adapter": "vscode-cpptools",
-      "configuration": {
-        "request": "Launch",
-        "program": "/data/data/com.termux/files/usr/bin/lldb",
-        "args": [],
-        "cwd": "${workspaceRoot}",
-        "environment": [],
-        "externalConsole": true,
-        "MIMode": "lldb"
-      }
-    },
-    "Attach": {
-      "adapter": "vscode-cpptools",
-      "configuration": {
-        "request": "attach",
-        "program": "/data/data/com.termux/files/usr/bin/lldb",
-        "MIMode": "lldb"
-      }
-    },
-	"python: debugpy": {
+	"Python: debugpy": {
       "adapter": "debugpy",
       "configuration": {
         "name": "python: debugpy",
         "type": "python",
         "request": "launch",
         "cwd": "${workspaceRoot}",
-        "python": "/data/data/com.termux/files/usr/bin/python",
+        "python": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python39\\python",
         "stopOnEntry": true,
         "console": "externalTerminal",
         "debugOptions": [],
         "program": "${file}"
       }
     },
-	"C# - netcoredbg": {
-      "adapter": "netcoredbg",
+	"cpp:launch": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "name": "cpp",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "F:\\Powershellapplicons\\winlibs-x86_64-posix-seh-gcc-11.1.0-llvm-12.0.0-mingw-w64-8.0.2-r1\\mingw64\\bin\\gdb",
+        "args": ["*${ProgramArgs}"],
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "externalConsole": false,
+        "stopAtEntry": true,
+        "MIMode": "gdb",
+        "logging": {
+          "engineLogging": true
+        }
+      }
+    },
+	"cpp vscode-cpptols": {
+      "adapter": "vscode-cpptools",
       "configuration": {
         "request": "launch",
-        "program": "${workspaceRoot}/bin/Debug/netcoreapp2.2/csharp.dll",
-        "args": [],
-        "stopAtEntry": true,
-        "cwd": "${workspaceRoot}",
-        "env": {}
+        "program": "F:\\Powershellapplicons\\winlibs-x86_64-posix-seh-gcc-11.1.0-llvm-12.0.0-mingw-w64-8.0.2-r1\\mingw64\\bin\\gdb",
+        "stopAtEntry": true
       }
     }
   }
