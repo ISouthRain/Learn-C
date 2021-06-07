@@ -3,7 +3,7 @@
     "Launch": {
       "adapter": "vscode-cpptools",
       "configuration": {
-        "request": "launch",
+        "request": "Launch",
         "program": "/data/data/com.termux/files/usr/bin/lldb",
         "args": [],
         "cwd": "${workspaceRoot}",
@@ -32,6 +32,17 @@
         "console": "externalTerminal",
         "debugOptions": [],
         "program": "${file}"
+      }
+    },
+	"C# - netcoredbg": {
+      "adapter": "netcoredbg",
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/bin/Debug/netcoreapp2.2/csharp.dll",
+        "args": [],
+        "stopAtEntry": true,
+        "cwd": "${workspaceRoot}",
+        "env": {}
       }
     }
   }
