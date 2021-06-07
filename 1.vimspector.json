@@ -1,25 +1,5 @@
 {
   "configurations": {
-    "Launch": {
-      "adapter": "vscode-cpptools",
-      "configuration": {
-        "request": "Launch",
-        "program": "/data/data/com.termux/files/usr/bin/lldb",
-        "args": [],
-        "cwd": "${workspaceRoot}",
-        "environment": [],
-        "externalConsole": true,
-        "MIMode": "lldb"
-      }
-    },
-    "Attach": {
-      "adapter": "vscode-cpptools",
-      "configuration": {
-        "request": "attach",
-        "program": "/data/data/com.termux/files/usr/bin/lldb",
-        "MIMode": "lldb"
-      }
-    },
 	"python: debugpy": {
       "adapter": "debugpy",
       "configuration": {
@@ -27,22 +7,11 @@
         "type": "python",
         "request": "launch",
         "cwd": "${workspaceRoot}",
-        "python": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python39\\python",
+        "python": "/usr/bin/python",
         "stopOnEntry": true,
         "console": "externalTerminal",
         "debugOptions": [],
         "program": "${file}"
-      }
-    },
-	"C# - netcoredbg": {
-      "adapter": "netcoredbg",
-      "configuration": {
-        "request": "launch",
-        "program": "${workspaceRoot}/bin/Debug/netcoreapp2.2/csharp.dll",
-        "args": [],
-        "stopAtEntry": true,
-        "cwd": "${workspaceRoot}",
-        "env": {}
       }
     }
   }
