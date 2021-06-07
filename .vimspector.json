@@ -20,7 +20,7 @@
         "name": "cpp",
         "type": "cppdbg",
         "request": "launch",
-        "program": "F:\\Powershellapplicons\\winlibs-x86_64-posix-seh-gcc-11.1.0-llvm-12.0.0-mingw-w64-8.0.2-r1\\mingw64\\bin\\gdb",
+        "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
         "args": ["*${ProgramArgs}"],
         "cwd": "${workspaceRoot}",
         "environment": [],
@@ -30,14 +30,6 @@
         "logging": {
           "engineLogging": true
         }
-      }
-    },
-	"cpp vscode-cpptols": {
-      "adapter": "vscode-cpptools",
-      "configuration": {
-        "request": "launch",
-        "program": "F:\\Powershellapplicons\\winlibs-x86_64-posix-seh-gcc-11.1.0-llvm-12.0.0-mingw-w64-8.0.2-r1\\mingw64\\bin\\gdb",
-        "stopAtEntry": true
       }
     }
   }
