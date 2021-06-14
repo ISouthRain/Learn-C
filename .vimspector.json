@@ -1,13 +1,13 @@
 {
   "configurations": {
-	"python: debugpy": {
+	"Python: debugpy": {
       "adapter": "debugpy",
       "configuration": {
         "name": "python: debugpy",
         "type": "python",
         "request": "launch",
         "cwd": "${workspaceRoot}",
-        "python": "/data/data/com.termux/files/usr/bin/python",
+        "python": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python39\\python",
         "stopOnEntry": true,
         "console": "externalTerminal",
         "debugOptions": [],
@@ -26,7 +26,7 @@
         "environment": [],
         "externalConsole": false,
         "stopAtEntry": true,
-        "MIMode": "/data/data/com.termux/files/usr/bin/gdb",
+        "MIMode": "gdb",
         "logging": {
           "engineLogging": true
         }
