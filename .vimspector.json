@@ -15,12 +15,12 @@
       }
     },
 	"cpp:launch": {
-      "adapter": "vscode-cpptools",
+      "adapter": "CodeLLDB",
       "configuration": {
         "name": "cpp",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "program": "${fileDirname}/${fileBasenameNoExtension}",
         "args": ["*${ProgramArgs}"],
         "cwd": "${workspaceRoot}",
         "environment": [],
