@@ -1,11 +1,13 @@
 c=1
-d=1
+df=1
 a='jacm'
-while c==d:
-    print(c+d,a)
+while c==df:
+    print(c+df,a)
     c=c+1
-    d=c+1
-while c!=d:
-    print(c+d)
-    c=c+1
-    d=d+1
+    df=c+1
+while c!=df:
+    print('jack')
+    print('k')
+if c==df:
+    print(33)
+    print('jjc')

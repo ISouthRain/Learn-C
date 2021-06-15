@@ -9,4 +9,7 @@ int main()
 				b=b+1;
 		}*/
 		printf("jlla");
+		if (a==b) {
+		printf("jack");
+		}
 }
