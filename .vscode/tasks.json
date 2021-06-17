@@ -54,5 +54,15 @@
             },
             "group": "build"
         },
+        //********** 运行Go ******************//
+        {
+            "label": "运行Go",
+            "type": "shell",
+            "command": "go run ${file}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "build"
+        },
     ]
 }
