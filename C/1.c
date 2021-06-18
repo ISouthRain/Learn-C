@@ -2,6 +2,6 @@
 int main()
 {
     printf("Jack");
-    printf("Woai");
+    printf("value");
     printf("jack");
 }
