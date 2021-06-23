@@ -19,7 +19,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "/sbin/gdb",
+            "miDebuggerPath": "",
             "preLaunchTask": "clang编译运行C文件",
             "setupCommands": [
                 {
