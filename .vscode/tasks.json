@@ -1,9 +1,9 @@
 {
     "version": "2.0.0",
     "tasks": [
-        //***************运行C语言**************//
+        //***************Winodws 运行C语言**************//
         {
-            "label": "clang编译运行C文件",
+            "label": "Win clang编译运行C文件",
             "type": "shell",
             "command": "clang ${file} -o ${fileBasenameNoExtension}",
             "options": {
@@ -12,7 +12,7 @@
             "group": "none"
         },
         {
-            "label": "运行已编译C文件",
+            "label": "Win 运行已编译C文件",
             "type": "shell",
             "command": "./${fileBasenameNoExtension}",
             "options": {
@@ -21,7 +21,7 @@
             "group": "none"
         },
         {
-            "label": "删除运行C语言的文件",
+            "label": "Win 删除运行C语言的文件",
             "type": "shell",
             "command": "rm ${fileBasenameNoExtension}.exe",
             "options": {
@@ -30,7 +30,7 @@
             "group": "none"
         },
         {
-            "label": "clang编译运行C语言",
+            "label": "Windows clang编译运行C语言",
             "group": "build",
             "presentation": {
                 "reveal": "silent",
@@ -38,17 +38,69 @@
             },
             "dependsOrder": "sequence",
             "dependsOn": [
-                "clang编译运行C文件",
-                "运行已编译C文件",
-                "删除运行C语言的文件"
+                "Win clang编译运行C文件",
+                "Win 运行已编译C文件",
+                "Win 删除运行C语言的文件"
             ],
             "problemMatcher": []
         },
-        //*********** 运行python *************//
+        /********* Linux 运行C语言 ************/
         {
-            "label": "运行Python",
+            "label": "Linux clang编译运行C文件",
+            "type": "shell",
+            "command": "clang ${file} -o ${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "none"
+        },
+        {
+            "label": "Linux 运行已编译C文件",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "none"
+        },
+        {
+            "label": "Linux 删除运行C语言的文件",
+            "type": "shell",
+            "command": "rm ${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "none"
+        },
+        {
+            "label": "Linux clang编译运行C语言",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent",
+                "focus": true
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Linux clang编译运行C文件",
+                "Linux 运行已编译C文件",
+                "Linux 删除运行C语言的文件"
+            ],
+            "problemMatcher": []
+        },
+        //*********** 运行python *************/
+        {
+            "label": "Windows 运行Python",
             "type": "shell",
             "command": "python ${file}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Linux 运行Python",
+            "type": "shell",
+            "command": "python3 ${file}",
             "options": {
                 "cwd": "${fileDirname}"
             },
