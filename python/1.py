@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import math
 l=[1]
 t1=(1,2,3)
@@ -11,3 +12,6 @@ print(dict.keys(),dict.values(),dict.items(),len(dict))
 print('jack')
 if t3==t1:
     print('agp')
+=======
+print('jack')
+>>>>>>> c7304f135145935f4f12af2481f26f0f98605b26
