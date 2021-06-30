@@ -6,7 +6,7 @@
             "name": "Linux Python调试当前文件",
             "type": "python",
             "request": "launch",
-            "program": "python3",
+            "program": "${file}",
             "console": "integratedTerminal"
         },
         {
@@ -29,7 +29,7 @@
             "externalConsole": false,
             "MIMode": "gdb",
             "miDebuggerPath": "",
-            "preLaunchTask": "clang编译运行C文件",
+            "preLaunchTask": "Win clang编译运行C文件",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -50,7 +50,7 @@
             "externalConsole": false,
             "MIMode": "gdb",
             "miDebuggerPath": "F:\\Powershellapplicons\\winlibs-x86_64-posix-seh-gcc-11.1.0-llvm-12.0.0-mingw-w64-8.0.2-r1\\mingw64\\bin\\gdb.exe",
-            "preLaunchTask": "clang编译运行C文件",
+            "preLaunchTask": "Win clang编译运行C文件",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

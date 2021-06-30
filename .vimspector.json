@@ -1,6 +1,6 @@
 {
   "configurations": {
-	"Python: debugpy": {
+	"Linux Python:debugpy": {
       "adapter": "debugpy",
       "configuration": {
         "name": "python: debugpy",
@@ -14,7 +14,7 @@
         "program": "${file}"
       }
     },
-	"cpp:launch": {
+	"Linux cpp:launch": {
       "adapter": "vscode-cpptools",
       "configuration": {
         "name": "cpp",
@@ -27,6 +27,38 @@
         "externalConsole": false,
         "stopAtEntry": true,
         "MIMode": "gdb",
+        "logging": {
+          "engineLogging": true
+        }
+      }
+    },
+	"Windows python: debugpy": {
+      "adapter": "debugpy",
+      "configuration": {
+        "name": "python: debugpy",
+        "type": "python",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "python": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "program": "${file}"
+      }
+    },
+	"Windows cpp:launch": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "name": "cpp",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "args": ["*${ProgramArgs}"],
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "externalConsole": false,
+        "stopAtEntry": true,
+        "MIMode": "F:\\Powershellapplicons\\winlibs-x86_64-posix-seh-gcc-11.1.0-llvm-12.0.0-mingw-w64-8.0.2-r1\\mingw64\\bin\\gdb",
         "logging": {
           "engineLogging": true
         }
