@@ -29,7 +29,7 @@
             "externalConsole": false,
             "MIMode": "gdb",
             "miDebuggerPath": "",
-            "preLaunchTask": "Win clang编译运行C文件",
+            "preLaunchTask": "Linux clang编译运行C文件",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
