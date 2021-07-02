@@ -1,5 +1,6 @@
 import math
 input('我爱你')
+print(math.log(10,10))
 l=[1]
 t1=(1,2,3)
 t2=(4,5,6)
